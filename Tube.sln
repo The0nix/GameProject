@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tube.CSharp.Plugins", "Tube.CSharp.Plugins.csproj", "{8649B819-96C1-1A97-9464-F5EEAA1AE2C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tube.CSharp", "Tube.CSharp.csproj", "{953026DD-B5D6-184D-5F9D-30639AA42212}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tube.CSharp.Editor", "Tube.CSharp.Editor.csproj", "{24131181-006E-15E4-46BB-465D04051052}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8649B819-96C1-1A97-9464-F5EEAA1AE2C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8649B819-96C1-1A97-9464-F5EEAA1AE2C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8649B819-96C1-1A97-9464-F5EEAA1AE2C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8649B819-96C1-1A97-9464-F5EEAA1AE2C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{953026DD-B5D6-184D-5F9D-30639AA42212}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{953026DD-B5D6-184D-5F9D-30639AA42212}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{953026DD-B5D6-184D-5F9D-30639AA42212}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{953026DD-B5D6-184D-5F9D-30639AA42212}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24131181-006E-15E4-46BB-465D04051052}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24131181-006E-15E4-46BB-465D04051052}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24131181-006E-15E4-46BB-465D04051052}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24131181-006E-15E4-46BB-465D04051052}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
