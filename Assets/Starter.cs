@@ -21,10 +21,9 @@ public class Starter : MonoBehaviour {
         }
 	}
 
-    public void StartGame()
-    {
-        //Application.LoadLevel(1);
+    public void StartGame() {
         async.allowSceneActivation = true;
+        //Application.LoadLevel(1);
     }
 
     IEnumerator LoadLevel()

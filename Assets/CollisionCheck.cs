@@ -7,6 +7,7 @@ public class CollisionCheck : MonoBehaviour {
     public static bool ColliderIsOn = true;
     public Image FlashPanel;
     public Text GameOverText;
+    public Text CountText;
     public Canvas GameOverCanvas;
     public AudioSource BoomSound;
     public AudioSource PlayOST;
@@ -21,7 +22,7 @@ public class CollisionCheck : MonoBehaviour {
 
     }
 
-    private const float DelayBeforeFlash = 0.1f;
+    private const float DelayBeforeFlash = 0.03f;
     private const float DelayAfterFlash = 0.2f;
 
     void OnTriggerEnter(Collider other)
@@ -45,8 +46,9 @@ public class CollisionCheck : MonoBehaviour {
         if (isRecord) {
                 GameSave.current.HighScore = (int)(ScoreCounter.counter * 10);
         }
-        GameOverText.text = "GameOver\n\nHigh score: " + GameSave.current.HighScore + "\n\nYour score: " + (int)(ScoreCounter.counter * 10); ;
+        GameOverText.text = "Game Over\n\nHigh score: " + GameSave.current.HighScore + "\n\nYour score: " + (int)(ScoreCounter.counter * 10); ;
         GameOverCanvas.gameObject.SetActive(true);
+        CountText.gameObject.SetActive(false);
         FlashPanel.CrossFadeAlpha(1, DelayAfterFlash, false);
         if(isRecord) {
             SaveLoad.Save();

@@ -7,7 +7,7 @@ public class MainManagerScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        PlayOST.time = 90;
+        PlayOST.time = 130;
         PlayOST.Play();
         SaveLoad.Load();
         CollisionCheck.ColliderIsOn = true;
