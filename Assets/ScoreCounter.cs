@@ -4,25 +4,29 @@ using System.Collections;
 
 public class ScoreCounter : MonoBehaviour {
 
-    public GameObject Collider;
     public Text GameOverText;
 
-    public int counter;
+    public static float counter;
     public Text CountText;
-	// Use this for initialization
+
+    bool isRed;
+
 	void Start () {
-        Collider = GameObject.FindGameObjectWithTag("Collider");
+        isRed = false;
+        CountText.color = Color.white;
         counter = 0;
 	}
 
     // Update is called once per frame
     void Update()
     {
-        if (Collider.GetComponent<CollisionCheck>().isOn)
+        if (!isRed && (int)(counter * 10) > GameSave.current.HighScore) {
+            CountText.color = Color.red;
+        }
+        if (CollisionCheck.ColliderIsOn)
         {
-            ++counter;
-            GameOverText.text = "GameOver\n\nYour score: " + counter;
-            CountText.text = "Score: " + counter;
+            counter += Time.deltaTime;  
+            CountText.text = "Score: " + (int)(counter * 10);
         }
     }
 }
